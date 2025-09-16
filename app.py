@@ -26,7 +26,7 @@ def to_title(txt):
         return None
     return str(txt).replace("_", " ").title()
 
-DATA_PATH = "data/PPR 0101-2021.xlsx"
+DATA_PATH = "data/basededatos.xlsx"
 df = load_data(DATA_PATH)
 
 col_entidad = find_col(df, ["gobierno", "entidad", "municipalidad", "gobierno local", "nombre", "region", "unidad"])
